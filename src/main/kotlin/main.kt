@@ -46,6 +46,18 @@ fun main() {
         "kolter saurey@usu.edu"
     )
     testDetector(EmailDetector(), emailTestStrings)
+
+    val passwordTestStrings = mutableListOf<String>(
+        "aaaaaa!A",
+        "A!@#$%^&*()",
+        "1234567*9J",
+        "asdpoihj;loikjasdf;ijp;lij2309jasd;lfkm20ij@aH",
+        "a",
+        "aaaaaa!a",
+        "aaaaaaA!",
+        "H!"
+    )
+    testDetector(PasswordDetector(), passwordTestStrings)
 }
 
 fun testDetector(detector: Detector, testStrings: List<String>) {
