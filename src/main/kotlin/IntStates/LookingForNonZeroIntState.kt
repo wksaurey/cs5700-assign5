@@ -1,6 +1,5 @@
 package IntStates
 
-import FloatingPointStates.ValidState
 import State
 import NON_ZERO_DIGITS
 

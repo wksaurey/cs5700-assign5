@@ -1,6 +1,6 @@
 abstract class Detector(private var initialState: State, private var validState: State ) {
 
-    fun isValid(string: String): Boolean {
+    open fun isValid(string: String): Boolean {
         var state = initialState
         for (letter in string) {
             state = state.consumeLetter(letter.toString())

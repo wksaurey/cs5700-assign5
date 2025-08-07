@@ -1,6 +1,5 @@
-import FloatingPointStates.FirstDigitState
 import State
-import FloatingPointStates.ValidState
+import IntStates.ValidState
 
 import IntStates.LookingForNonZeroIntState
 

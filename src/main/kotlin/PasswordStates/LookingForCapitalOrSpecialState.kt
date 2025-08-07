@@ -3,7 +3,7 @@ package PasswordStates
 import SPECIAL_CHARS
 import State
 
-class LookingForCapitalOrSpecial: State {
+class LookingForCapitalOrSpecialState: State {
     override fun consumeLetter(letter: String): State {
         if (letter[0].isUpperCase()) return HasCapitalState()
         else if (letter in SPECIAL_CHARS) return HasSpecialState()

@@ -6,7 +6,7 @@ import State
 class ValidState: State {
     override fun consumeLetter(letter: String): State {
         return when(letter) {
-            in SPECIAL_CHARS -> LookingForNonSpecial()
+            in SPECIAL_CHARS -> LookingForNonSpecialState()
             else -> this
         }
     }
